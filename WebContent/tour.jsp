@@ -215,8 +215,8 @@
                         <div class="col-head">UN AGENCIES</div>
                         <div class="col-body">
                             <ul>
-                                <li>WHO</li>
-                                <li>UNDP</li>
+                                <li  onclick="showVideo('WHO','https://www.youtube.com/embed/HmMpCO2BDts?feature=oembed')">WHO</li>
+                                <li onclick="showVideo('UNDP','https://www.youtube.com/embed/HmMpCO2BDts?feature=oembed')">UNDP</li>
                                 <li>UNICEF</li>
                                 <li>WB</li>
                             </ul>
@@ -285,9 +285,12 @@
                 </div>
             </div>
             <div class="col-37">
-                <h3>National Warehouse</h3>
+                <h3 id="labelText">National Warehouse</h3>
                 <div class="clearfix"></div>
+                <div id="content">
                 <img src="./tour_files/warehouse.jpg" width="100%">
+                </div>
+                
             </div>
         </div>
         <div class="clearfix"></div>
@@ -390,7 +393,10 @@ eXo.env.server.portalURLTemplate="/portal/empower/overview/tour?portal:action=_p
   
   <script type="text/javascript">
   
-  
+  function showVideo(label,videoLink) {
+	   document.getElementById("labelText").innerHTML=label;
+	   document.getElementById("content").innerHTML='<iframe class="embed-responsive-item" src="'+videoLink+'" frameborder="0" allowfullscreen=""></iframe>';
+	}
   </script>
 
 </body></html>

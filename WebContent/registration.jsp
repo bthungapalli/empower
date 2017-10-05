@@ -32,7 +32,7 @@
             <li><a href="#">Platform</a></li>
             <li><a href="#">Global Experts</a></li>
             <li><a href="#">Partners</a></li>
-            <li><a href="#">Take a Tour</a></li>
+            <li><a href="tour.jsp">Take a Tour</a></li>
             <li><a href="#">Search</a></li>
             <li><a href="#">Register</a></li>
         </ul>
